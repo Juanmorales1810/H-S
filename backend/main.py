@@ -5,6 +5,8 @@ from routers.empresas import empresas
 from routers.cursos import cursos
 from routers.empleados import empleados
 from routers.accidentes import accidentes
+from routers.user import user
+
 app = FastAPI()
 
 origins = [
@@ -12,6 +14,7 @@ origins = [
     "https://localhost.tiangolo.com",
     "http://localhost",
     "http://localhost:5173",
+    "http://localhost:3000",
 ]
 
 
@@ -28,3 +31,4 @@ app.include_router(empresas, tags=["Empresas"])
 app.include_router(cursos, tags=["Cursos"])
 app.include_router(empleados, tags=["Empleados"])
 app.include_router(accidentes, tags=["Accidentes"])
+app.include_router(user, tags=["User"])
