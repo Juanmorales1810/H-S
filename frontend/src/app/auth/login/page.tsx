@@ -64,7 +64,7 @@ export default function Page() {
     return (
         <section className='flex justify-center items-center w-full h-screen max-w-md mx-auto'>
             <Form {...form}>
-                <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8 w-full bg-zinc-100 px-12 py-8 rounded-md shadow-md">
+                <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8 w-full bg-zinc-100 px-12 py-8 rounded-md shadow-md dark:bg-transparent dark:border-[1px] border-zinc-600">
                     <FormField
                         control={form.control}
                         name="email"
